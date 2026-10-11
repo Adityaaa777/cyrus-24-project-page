@@ -1,0 +1,88 @@
+.project-summary {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 570;
+  overflow: hidden;
+  background: #15151d;
+  color: #f7f7f8;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.project-summary h1,
+.project-summary h2,
+.project-summary h3,
+.project-summary p {
+  margin: 0;
+}
+
+.project-summary > h1 {
+  position: absolute;
+  top: 13.8544%;
+  left: 5.8374%;
+  font-size: 2.0848cqw;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.project-introduction {
+  position: absolute;
+  top: 26.8206%;
+  left: 5.8374%;
+  width: 43.0855%;
+}
+
+.project-summary h2,
+.project-summary h3 {
+  color: #7c7c8d;
+  font-size: 1.2509cqw;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.project-copy {
+  margin-top: 1.529cqw;
+}
+
+.project-copy p {
+  font-size: 1.2509cqw;
+  font-weight: 500;
+  line-height: 1.58;
+  letter-spacing: -0.011em;
+}
+
+.project-copy p + p {
+  margin-top: 2.1543cqw;
+}
+
+.project-metadata {
+  position: absolute;
+  top: 26.8206%;
+  left: 59.2773%;
+  display: flex;
+  flex-direction: column;
+  gap: 10.841cqw;
+}
+
+.project-type-list {
+  display: flex;
+  gap: 0.834cqw;
+  margin-top: 1.1814cqw;
+}
+
+.project-type-pill {
+  display: inline-flex;
+  min-height: 3.0577cqw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: #282832;
+  padding: 0.695cqw 1.529cqw;
+  font-size: 1.1119cqw;
+  font-weight: 500;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+

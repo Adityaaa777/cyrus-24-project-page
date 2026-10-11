@@ -1,0 +1,29 @@
+.cyrus-driver-gallery-section {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 923;
+  overflow: hidden;
+  background: #15151d;
+}
+
+.cyrus-driver-gallery-panel {
+  position: absolute;
+  left: 5.9027778%;
+  top: 2.383532%;
+  width: 88.1944444%;
+  height: 92.6327194%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0b0b0f;
+}
+
+.cyrus-driver-gallery-screen { position: absolute; }
+
+.cyrus-driver-gallery-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+

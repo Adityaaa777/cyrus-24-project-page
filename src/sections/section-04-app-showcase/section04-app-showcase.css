@@ -1,0 +1,84 @@
+.cyrus-app-showcase {
+  container-type: inline-size;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 788;
+  overflow: hidden;
+  background: #0b0b0f;
+  color: #e0e4e7;
+  font-family: "Poppins", sans-serif;
+}
+
+.cyrus-app-showcase__panel {
+  position: absolute;
+  left: 5.9027778%;
+  top: -1.6497462%;
+  width: 88.1944444%;
+  height: 99.6192893%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0b0b0f;
+}
+
+.cyrus-app-showcase__heading {
+  position: absolute;
+  top: 6.3694268%;
+  width: 30.3937008%;
+  z-index: 1;
+}
+
+.cyrus-app-showcase__heading--user {
+  left: 2.3622047%;
+  top: 8.9171975%;
+}
+.cyrus-app-showcase__heading--driver { left: 51.9685039%; }
+
+.cyrus-app-showcase__heading h2,
+.cyrus-app-showcase__heading p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.cyrus-app-showcase__heading h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.6667cqw;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.cyrus-app-showcase__heading p {
+  margin-top: 0.6944cqw;
+  font-size: 1.25cqw;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.cyrus-app-showcase__heading--user h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.cyrus-app-showcase__heading--user p { margin-top: 0; }
+
+.cyrus-app-showcase__phone {
+  position: absolute;
+  top: 24.5859873%;
+  width: 21.8110236%;
+  height: 76.433121%;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+.cyrus-app-showcase__phone img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  user-select: none;
+}

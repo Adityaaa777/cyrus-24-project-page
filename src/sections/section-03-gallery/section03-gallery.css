@@ -1,0 +1,30 @@
+.cyrus-gallery-section {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1440 / 914;
+  overflow: hidden;
+  background: #0b0b0f;
+}
+
+.cyrus-gallery-panel {
+  position: absolute;
+  left: 5.9027778%;
+  top: 3.8293217%;
+  width: 88.1944444%;
+  height: 93.5448578%;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #0b0b0f;
+}
+
+.cyrus-gallery-screen {
+  position: absolute;
+}
+
+.cyrus-gallery-screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+}

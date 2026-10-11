@@ -1,0 +1,261 @@
+.cyrus-cover {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  aspect-ratio: 1440 / 722;
+  overflow: hidden;
+  background: #b4e794;
+  color: #242731;
+}
+
+.cyrus-cover__circle {
+  position: absolute;
+  left: 67.638889%;
+  top: 4.98615%;
+  width: 45.138889%;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #49911d;
+}
+
+.cyrus-cover__navigation {
+  position: absolute;
+  z-index: 2;
+  top: 6.232687%;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-inline: 5.902778%;
+}
+
+.cyrus-cover__nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.347222cqw;
+  min-height: 1.666667cqw;
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.111111cqw;
+  font-weight: 600;
+  line-height: 0.80705;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.cyrus-cover__nav-link:first-child span {
+  color: #000;
+}
+
+.cyrus-cover__nav-link img {
+  display: block;
+  width: 1.666667cqw;
+  height: 1.666667cqw;
+  flex: none;
+}
+
+.cyrus-cover__nav-link:last-child img {
+  transform: scaleX(-1);
+}
+
+.cyrus-cover__nav-link:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+.cyrus-cover__logo {
+  position: absolute;
+  left: 3.263889%;
+  top: 17.867036%;
+  display: block;
+  width: 11.408681%;
+  height: 8.374%;
+  object-fit: contain;
+  transform: rotate(0.25deg);
+}
+
+.cyrus-cover__title {
+  position: absolute;
+  left: 6.25%;
+  top: 25.623269%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 6.111111cqw;
+  font-weight: 600;
+  line-height: 0.87;
+  white-space: nowrap;
+}
+
+.cyrus-cover__service {
+  position: absolute;
+  left: 26.111111%;
+  top: 37.119114%;
+  margin: 0;
+  font-size: 1.388889cqw;
+  font-weight: 500;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.cyrus-cover__copy {
+  position: absolute;
+  left: 6.25%;
+  top: 44.736842%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.833333cqw;
+}
+
+.cyrus-cover__copy p {
+  margin: 0;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.cyrus-cover__tagline {
+  font-size: 2.430556cqw;
+  line-height: 1.08;
+}
+
+.cyrus-cover__description {
+  color: #5f6165;
+  font-size: 1.388889cqw;
+  line-height: 1.374;
+}
+
+.cyrus-cover__car {
+  position: absolute;
+  left: 6.25%;
+  top: 58.864266%;
+  width: 26.666667%;
+  aspect-ratio: 278 / 173;
+  overflow: hidden;
+}
+
+.cyrus-cover__car img {
+  position: absolute;
+  top: -21.97%;
+  left: -2.88%;
+  display: block;
+  width: 104.32%;
+  height: 124.86%;
+  max-width: none;
+}
+
+.cyrus-cover__phone {
+  position: absolute;
+  overflow: hidden;
+}
+
+.cyrus-cover__phone img {
+  position: absolute;
+  display: block;
+  max-width: none;
+}
+
+.cyrus-cover__phone--center {
+  left: 55%;
+  top: 8.171745%;
+  width: 20.972222%;
+  height: 83.518006%;
+}
+
+.cyrus-cover__phone--center img {
+  top: -23.27%;
+  left: -158.7%;
+  width: 416.26%;
+  height: 146.02%;
+}
+
+.cyrus-cover__phone--right {
+  left: 25.384615%;
+  top: 11.846154%;
+  width: 39.230769%;
+  height: 76.153846%;
+}
+
+.cyrus-cover__phone--right img {
+  top: -22.2%;
+  left: -152.84%;
+  width: 403.41%;
+  height: 145.19%;
+}
+
+@media (max-width: 700px) {
+  .cyrus-cover {
+    min-height: 760px;
+    aspect-ratio: auto;
+  }
+
+  .cyrus-cover__navigation {
+    top: 24px;
+    padding-inline: 20px;
+  }
+
+  .cyrus-cover__nav-link {
+    gap: 5px;
+    min-height: 20px;
+    font-size: 12px;
+  }
+
+  .cyrus-cover__nav-link img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cyrus-cover__logo {
+    top: 94px;
+    left: 5%;
+    width: 130px;
+    height: 50px;
+  }
+
+  .cyrus-cover__title {
+    top: 142px;
+    left: 6%;
+    font-size: clamp(46px, 10vw, 76px);
+  }
+
+  .cyrus-cover__service {
+    top: 202px;
+    left: 50%;
+    font-size: 14px;
+  }
+
+  .cyrus-cover__copy {
+    top: 255px;
+    left: 6%;
+    gap: 6px;
+  }
+
+  .cyrus-cover__tagline {
+    font-size: 24px;
+  }
+
+  .cyrus-cover__description {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+  .cyrus-cover__car {
+    top: 345px;
+    left: 4%;
+    width: 55%;
+  }
+
+  .cyrus-cover__circle {
+    top: 390px;
+    left: 48%;
+    width: 76%;
+  }
+
+  .cyrus-cover__phone--center {
+    top: 415px;
+    left: 17%;
+    width: 35%;
+    height: auto;
+    aspect-ratio: 302 / 603;
+  }
+}

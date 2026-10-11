@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Poppins:wght@500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-synthesis: none;
+  color: #242731;
+  background: #15151d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+.cyrus-project-page {
+  width: 100%;
+  overflow-x: hidden;
+}
