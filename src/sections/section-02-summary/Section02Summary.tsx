@@ -27,7 +27,7 @@ export function ProjectSummarySection() {
       aria-labelledby="project-summary-title"
       data-node-id="1:475"
     >
-      <h1 id="project-summary-title">Safe 2 Destination Ride Booking App UI</h1>
+      <h1 id="project-summary-title">Cyrus 24 Taxi Service App UI</h1>
 
       <section
         className="project-introduction"
@@ -36,28 +36,28 @@ export function ProjectSummarySection() {
         <h2 id="introduction-title">INTRODUCTION :</h2>
         <div className="project-copy">
           <p>
-            Cabzo was designed as a modern urban mobility platform built to{" "}
+            Cyrus 24 was designed as a taxi service app that makes{" "}
             <br className="desktop-break" />
-            simplify everyday commuting. <br className="desktop-break" />
-            The focus of this product was to create a fast, visually clean, and{" "}
+            every ride simple and comfortable. <br className="desktop-break" />
+            The rider experience brings together destination search,{" "}
             <br className="desktop-break" />
-            highly intuitive ride-booking experience for daily users who{" "}
+            vehicle selection, ride scheduling, and clear trip updates{" "}
             <br className="desktop-break" />
-            prioritize speed, convenience, and real-time visibility.
+            in an easy-to-use booking flow.
           </p>
 
           <p>
-            The platform was designed around the idea that booking a ride{" "}
+            From choosing a vehicle to confirming a ride,{" "}
             <br className="desktop-break" />
-            should feel effortless — from location detection to ride{" "}
+            each screen helps riders move confidently from{" "}
             <br className="desktop-break" />
-            confirmation, every interaction was optimized to reduce friction.
+            booking to arrival.
           </p>
 
           <p>
-            Cabzo combines a rider app, driver interface, and operational{" "}
+            A companion driver app covers onboarding, trip details,{" "}
             <br className="desktop-break" />
-            backend into a connected mobility ecosystem.
+            ride history, earnings, and payments.
           </p>
         </div>
       </section>

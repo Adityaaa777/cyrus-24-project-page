@@ -1,39 +1,47 @@
-import { useRef } from "react"
+import { useRelatedCarousel } from "./useRelatedCarousel"
 import "./section07-related.css"
 
 const projects = [
   {
     title: "Nzcu",
-    description:
-      "Book cars, scooters, e-rickshaws, and\nloaders—all from one platform.",
-    image: "/assets/section-07-related/nzcu.png",
-    imageAlt: "Nzcu mobile application project cover",
-  },
-  {
-    title: "Corezap",
-    description:
-      "Manage rides and fleet operations from one\nintelligent platform.",
-    image: "/assets/section-07-related/corezap.png",
-    imageAlt: "Corezap fleet platform project cover",
+    description: "Book cars, scooters, e-rickshaws, and loaders—all from one platform.",
+    category: "Mobile App Design",
+    image: "/assets/related-covers/related-nzcu.webp",
+    href: "https://adityaaa777.github.io/nzcu-project-page/",
   },
   {
     title: "Cabzo",
-    description:
-      "A smart ride booking app designed for fast,\nconvenient, and reliable travel.",
-    image: "/assets/section-07-related/cabzo.png",
-    imageAlt: "Cabzo ride booking project cover",
+    description: "A smart ride booking app designed for fast, convenient, and reliable travel.",
+    category: "Mobile App Design",
+    image: "/assets/related-covers/related-cabzo.webp",
+    href: "https://adityaaa777.github.io/cabzo-project-page/",
+  },
+  {
+    title: "Safe 2 Destination",
+    description: "Book safe daily or monthly rides with a seamless travel experience.",
+    category: "Mobile App Design",
+    image: "/assets/related-covers/related-safe2destination.webp",
+    href: "https://adityaaa777.github.io/safe2destination-project-page/",
+  },
+  {
+    title: "Attach App",
+    description: "Connect with caring listeners anytime, anywhere in a safe, supportive space.",
+    category: "Mobile App Design",
+    image: "/assets/related-covers/related-attach-app.webp",
+    href: "https://adityaaa777.github.io/attach-app-project-page/",
+  },
+  {
+    title: "Attach Website",
+    description: "Explore a welcoming space for open conversations and support.",
+    category: "Web Design",
+    image: "/assets/related-covers/related-attach-website.webp",
+    href: "https://adityaaa777.github.io/attach-website-project-page/",
   },
 ]
 
 /** Standalone related project carousel from Figma node 67:3793. */
 export default function Section07Related() {
-  const track = useRef<HTMLDivElement>(null)
-  const move = (direction: -1 | 1) => {
-    const element = track.current
-    if (!element) return
-    const card = element.querySelector<HTMLElement>(".cyrus-related-card")
-    element.scrollBy({ left: direction * (card?.offsetWidth ?? 400) + direction * 32, behavior: "smooth" })
-  }
+  const { track, move } = useRelatedCarousel()
 
   return (
     <section className="cyrus-section-08" id="related-projects" aria-labelledby="cyrus-related-title" data-node-id="67:3793">
@@ -47,19 +55,19 @@ export default function Section07Related() {
         </header>
         <div className="cyrus-related-track" ref={track}>
           {projects.map((project) => (
-            <article className="cyrus-related-card" key={project.title}>
+            <a className="cyrus-related-card" href={project.href} key={project.title} aria-label={`View ${project.title} project`}>
               <img className="cyrus-related-cover" src={project.image} alt={`${project.title} project cover`} />
               <div className="cyrus-related-card-content">
                 <div className="cyrus-related-meta">
-                  <span>Mobile App Design</span>
-                  <a className="cyrus-related-card-arrow" href={project.title === "Nzcu" ? "../NZCU_PROJECT_PAGE/" : project.title === "Corezap" ? "#corezap" : "../CABZO_PROJECT_PAGE/v1/"} aria-label={`Open ${project.title} project`}>
+                  <span>{project.category}</span>
+                  <span className="cyrus-related-card-arrow" aria-hidden="true">
                     <img src="/assets/section-08-related/project-arrow-alt.svg" alt="" />
-                  </a>
+                  </span>
                 </div>
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
               </div>
-            </article>
+            </a>
           ))}
         </div>
       </div>

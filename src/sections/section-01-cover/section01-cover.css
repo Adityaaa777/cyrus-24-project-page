@@ -42,10 +42,20 @@
   line-height: 0.80705;
   white-space: nowrap;
   text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.cyrus-cover__nav-link:hover {
+  color: #6c36fe;
+  transform: translateY(-3px);
 }
 
 .cyrus-cover__nav-link:first-child span {
   color: #000;
+}
+
+.cyrus-cover__nav-link:first-child:hover span {
+  color: #6c36fe;
 }
 
 .cyrus-cover__nav-link img {

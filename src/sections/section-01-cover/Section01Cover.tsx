@@ -2,6 +2,7 @@ import { DetailImage } from "../../components/DetailImage"
 import "./section01-cover.css"
 
 const assetBase = "/assets/section-01-cover"
+const phoneViewCrop = { sourceWidth: 4000, x: 1530, y: 450, width: 943, height: 1908 }
 
 export type Section01CoverProps = {
   backHref?: string
@@ -17,7 +18,7 @@ export default function Section01Cover({
     <section className="cyrus-cover" aria-label="Cyrus-24 taxi service cover" data-node-id="1:497">
       <div className="cyrus-cover__circle" data-node-id="1:505">
         <div className="cyrus-cover__phone cyrus-cover__phone--right" data-node-id="1:506">
-          <DetailImage src={`${assetBase}/phone-right.png`} alt="Cyrus-24 ride booking home screen" />
+          <DetailImage src={`${assetBase}/phone-right.png`} alt="Cyrus-24 ride booking home screen" viewCrop={phoneViewCrop} />
         </div>
       </div>
 
@@ -48,7 +49,7 @@ export default function Section01Cover({
       </div>
 
       <div className="cyrus-cover__phone cyrus-cover__phone--center" data-node-id="1:516">
-        <DetailImage src={`${assetBase}/phone-center.png`} alt="Cyrus-24 app welcome screen" />
+        <DetailImage src={`${assetBase}/phone-center.png`} alt="Cyrus-24 app welcome screen" viewCrop={phoneViewCrop} />
       </div>
     </section>
   )
